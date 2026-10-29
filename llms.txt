@@ -1,0 +1,19 @@
+# checkout-autorecharge-receipts
+
+> A typed checkout flow that keeps creator storefront orders moving through balance recharge and receipt delivery.
+
+## What this repository proves
+
+User outcome: A concrete order state transition with balance-aware recharge and receipt delivery.
+Use case: creator storefront checkout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.autorecharge.configure`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `src/checkout_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

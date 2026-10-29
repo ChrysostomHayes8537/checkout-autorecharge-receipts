@@ -1,0 +1,14 @@
+{
+  "name": "checkout-autorecharge-receipts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node --experimental-strip-types src/checkout_service.ts",
+    "demo:live": "LIVE_INFRAI=1 node --experimental-strip-types src/checkout_service.ts",
+    "test": "node --experimental-strip-types --test src/checkout_service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "@types/node": "^22.10.0", "typescript": "^5.7.0" }
+}
